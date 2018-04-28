@@ -8,6 +8,9 @@ virtualenv ./venv<br>
 source ./venv/bin/active<br>
 ./venv/bin/pip install -r requirements.txt<br>
 第四步，创建数据库<br>
+在config.py文件中修改成自己的mysql数据库
+SQLALCHEMY_DATABASE_URI = 'mysql://username:password@hostname/database'<br>
+然后执行<br>
 ./create_db.py<br>
 第五步，启动<br>
 ./manage.py runserver -d 0.0.0.0 -d<br>
